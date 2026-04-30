@@ -774,6 +774,7 @@ class ConstraintRulesTest extends WordSpec with FixtureSupport with SparkContext
           stdDev = Some(1.0),
           variance = None,
           skewness = None,
+          kurtosis = None,
           approxPercentiles = None)
       }
 

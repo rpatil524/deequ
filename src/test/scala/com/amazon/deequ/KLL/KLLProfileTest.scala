@@ -83,6 +83,7 @@ class KLLProfileTest extends WordSpec with Matchers with SparkContextSpec
           stdDev = Some(1.707825127659933),
           variance = Some(2.9166666666666665),
           skewness = Some(0.0),
+          kurtosis = Some(-1.2685714285714285),
           approxPercentiles = Some(Seq(1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
             2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
             2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0,
@@ -128,6 +129,7 @@ class KLLProfileTest extends WordSpec with Matchers with SparkContextSpec
           stdDev = Some(8.65544144839919),
           variance = Some(74.91666666666667),
           skewness = Some(0.0),
+          kurtosis = Some(-1.2685714285714285),
           approxPercentiles = None)
 
         assertProfilesEqual(expectedColumnProfile,

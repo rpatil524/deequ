@@ -101,6 +101,8 @@ class AnalysisResultSerdeTest extends FlatSpec with Matchers {
         DoubleMetric(Entity.Column, "Variance", "ColumnA", Success(5.0)),
       Skewness("ColumnA") ->
         DoubleMetric(Entity.Column, "Skewness", "ColumnA", Success(0.0)),
+      Kurtosis("ColumnA") ->
+        DoubleMetric(Entity.Column, "Kurtosis", "ColumnA", Success(0.0)),
       DataType("ColumnA") ->
         DoubleMetric(Entity.Column, "Completeness", "ColumnA", Success(5.0)),
       MinLength("ColumnA") ->
